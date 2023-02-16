@@ -5,7 +5,7 @@ WORKDIR /root
 EXPOSE 22 80 443 8080
 
 RUN apt-get update &&\
-    apt-get install -y curl wget iproute2 openssh-server systemctl &&\
+    apt-get install -y curl wget unzip iproute2 openssh-server systemctl &&\
     echo \
     '#!/bin/bash\
      service ssh start\
